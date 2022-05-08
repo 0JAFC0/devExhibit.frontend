@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>João Arthur - Home</title>
+        <!-- importações estilos-->
+        <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles/style.css">
+        <!-- importações js-->
+        <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="js/carregaHTML.js"></script>
+    </head>
+    <body>
+        <div id="head" class="container"></div>
+        <div id="body" class="container row mt-4 w-75 h-auto p-5 rounded"></div>
+
+        <footer class="text-center p-4">JAFC @0jafc0</footer>
+        <!--rodar o include de htmls-->
+        <script>
+            // chamada da função includeHTML(diretorio do arquivo html, tag)
+            includeHTML("pages/head.html","head");
+            includeHTML("pages/body.html","body");
+        </script>
+    </body>
+</html>
