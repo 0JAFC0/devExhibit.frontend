@@ -14,15 +14,19 @@
         <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
         <script type="text/javascript" src="js/carregaHTML.js"></script>
     </head>
-    <body>
-        <div id="head" class="container"></div>
-        <div id="body" class="container row mt-4 w-75 h-auto p-5 rounded"></div>
+    <body id="corpo">
+        <div id="head" class=""></div>
+        <div class="row mt-3">
+            <div id="leftInfos" class=" text-center p-2"></div>
+            <div id="body" class="rounded p-5"></div>
+        </div>
 
-        <footer class="text-center p-4">JAFC @0jafc0</footer>
+        <footer id="rodape" class="text-center p-4">JAFC @0jafc0</footer>
         <!--rodar o include de htmls-->
         <script>
             // chamada da função includeHTML(diretorio do arquivo html, tag)
             includeHTML("pages/head.html","head");
+            includeHTML("pages/leftInfos.html","leftInfos");
             includeHTML("pages/body.html","body");
         </script>
     </body>

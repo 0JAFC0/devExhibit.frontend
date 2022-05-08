@@ -1,34 +1,68 @@
+
 body{
-    margin: 0;
-    background-color: #16161A;
-    overflow-y: auto;
+    background-color: #16161A !important;
+    -webkit-print-color-adjust: exact;
+    overflow-x: hidden;
+    -webkit-print-color-adjust: exact;
 }
 
 .data{
-    background-color: #7F5AF0;
+    background-color: #7F5AF0 !important;
+    -webkit-print-color-adjust: exact;
 }
 
 .card-title{
-    color: #FFFFFF;
+    color: #FFFFFF !important;
+    -webkit-print-color-adjust: exact;
+}
+
+#leftInfos{
+    width: 20%;
+    margin-left: 2%;
+}
+
+#area{
+    background-color: #72757E !important;
+    -webkit-print-color-adjust: exact;
+}
+
+#informacoes, #linguagem, #interesses {
+    color: #FFFFFF !important;
+    background-color: #72757E !important;
+    -webkit-print-color-adjust: exact;
+}
+
+h5{
+    font-size: 15px;
+}
+
+p{
+    font-size: 15px;
 }
 
 #body{
-    background-color: #72757E;
+    background-color: #72757E !important;
+    width: 73%;
+    margin-left: 3%;
+    -webkit-print-color-adjust: exact;
 }
 
-#body{
-    margin-left: 22%;
+#rodape{
+    
 }
 
 
 .nav .nav-item .nav-link {
-    color: #FFFFFF;
+    color: #FFFFFF !important;
+    -webkit-print-color-adjust: exact;
 }
 
 .nav .nav-item .active{
     text-decoration: underline 3px;
+    -webkit-print-color-adjust: exact;
 }
 
 .nav{
     margin-left: 30%;
+    -webkit-print-color-adjust: exact;
 }
