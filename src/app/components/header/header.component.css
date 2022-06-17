@@ -1,0 +1,65 @@
+
+body{
+  font-size: 14rem;
+}
+
+#cabecalho{
+  position: relative;
+  top: -50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.avatar{
+  margin-bottom: 20px;
+  border: 1px solid #72757e;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background-color: #E5E5E5;
+  width: 150px;
+  height: 150px;
+}
+
+#nome{
+  color: #7F5AF0;
+  font-size: 3rem;
+}
+
+#cargo{
+  font-size: 1.2rem;
+}
+
+.wrapper{
+  width: 100%;
+  height: auto;
+}
+
+.wrapper button{
+  margin: 10px;
+}
+
+.wrapper mat-icon{
+  margin: 5px;
+}
+
+@media screen and (max-width: 320px) {
+  .avatar{
+    width: 110px;
+    height: 110px;
+  }
+  .wrapper{
+    max-width: 400px;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .avatar{
+    width: 180px;
+    height: 180px;
+  }
+}

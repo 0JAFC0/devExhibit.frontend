@@ -1,0 +1,11 @@
+<header id="cabecalho">
+  <img class="avatar" [src]="getImageAvatar()" alt="avatar">
+  <h4 id="nome">{{ getNome() }}</h4>
+  <h5 id="cargo">{{ getCargo() }}</h5>
+  <div class="wrapper">
+    <button mat-mini-fab color="primary" *ngFor="let rede of getRedesSociais()" id="{{ rede.getNome() }}" (click)="openLink(rede.getLink())">
+      <mat-icon fontSet="fa-brands" fontIcon="{{ rede.getNomeIcone() }}"></mat-icon>
+    </button>
+  </div>
+</header>
+
