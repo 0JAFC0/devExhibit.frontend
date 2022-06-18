@@ -15,7 +15,7 @@
 <section align="center">
   <h3 >O que ainda falta fazer?</h3>
   <li >[x] Prototipagem da interface</li>
-  <li >[ ] Criar primeiros arquivos e organizar pastas</li>
+  <li >[x] Criar primeiros arquivos e organizar pastas</li>
   <li >[ ] Criar Sobre mim</li>
   <li >[ ] Criar Parte das habilidades</li>
   <li >[ ] Criar Parte das Experiencias</li>
