@@ -1,12 +1,17 @@
-<div class="row">
-  <div class="col">
-    <div class="info-list">
-      <ul>
-        <li></li>
-      </ul>
-    </div>
+<div class="section">
+  <div class="info-list">
+    <ul>
+      <li><span class="realca idade">Idade:</span><span>{{ idade }} anos</span></li>
+      <li><span class="realca trabalho">Trabalho:</span> {{ trabalho }}</li>
+      <li><span class="realca ondeMora">Onde mora:</span> {{ ondeMora }}</li>
+      <li><span class="realca email">E-mail:</span> {{ email }}</li>
+    </ul>
   </div>
-  <div class="col">
-
+  <div class="mensagem">
+    <h2>{{ mesagemTitulo }}</h2>
+    <div class="informacoes">{{ mensagem }}</div>
+    <div class="botoes">
+      <button mat-button>Contate-me</button>
+    </div>
   </div>
 </div>
