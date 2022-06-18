@@ -46,6 +46,50 @@ body{
   margin: 5px;
 }
 
+.wrapper button{
+  outline: 2px solid #E5E5E5;
+  transition-property: outline-offset, outline-color, background-color;
+  transition-duration: .25s;
+}
+
+.wrapper button:hover{
+  outline-offset: 4px;
+}
+
+.wrapper button:hover mat-icon{
+  animation: shake .25s;
+}
+
+.wrapper #instagram:hover{
+  background-image: radial-gradient(circle at 30% 107%,
+  #fdf497 0%, #fdf497 5%,
+  #fd5949 45%,#d5249f 60%,
+  #285AEB 90%);
+  outline-color: #a02d76;
+}
+
+.wrapper #linkedin:hover{
+  background-color: #0077b5;
+  outline-color: #0077b5;
+}
+
+.wrapper #github:hover{
+  background-color: #2ea44f;
+  outline-color: #2ea44f;
+}
+
+.wrapper button:hover{
+  background-color: transparent;
+  outline-color: #E5E5E5;
+}
+
+@keyframes shake{
+  10%{transform: rotate(15deg);}
+  20%{transform: rotate(-15deg);}
+  30%{transform: rotate(15deg);}
+  40%{transform: rotate(-15deg);}
+}
+
 @media screen and (max-width: 320px) {
   .avatar{
     width: 110px;
