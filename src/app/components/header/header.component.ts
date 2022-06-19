@@ -16,7 +16,7 @@ export class HeaderComponent implements OnInit {
   constructor() {
     this.nome = "João Arthur";
     this.cargo = "Desenvolvedor Fullstack";
-    this.imageAvatar = "";
+    this.imageAvatar = "../../../assets/images/profile-pic.png";
     this.redesSociais = new Array<RedeSocial>();
   }
 
