@@ -6,9 +6,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HabilidadesComponent } from './components/habilidades/habilidades.component';
 import { HeaderComponent } from './components/header/header.component';
-import { StartedBgComponent } from './components/started-bg/started-bg.component';
 import { SobreComponent } from './components/sobre/sobre.component';
+import { StartedBgComponent } from './components/started-bg/started-bg.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { SobreComponent } from './components/sobre/sobre.component';
     StartedBgComponent,
     HeaderComponent,
     SobreComponent,
+    HabilidadesComponent,
   ],
   imports: [
     BrowserModule,
