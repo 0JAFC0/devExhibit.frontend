@@ -1,0 +1,23 @@
+<div class="divHabilidades">
+  <h3>Habilidades</h3>
+  <div class="habilidades">
+    <div class="tecnicaSkill">
+      <p class="fa-solid fa-gear iconeTecnica"></p>
+      <ul *ngFor="let tecnica of habilidadesTecnicas">
+        <li>
+          <div class="nomeTecnico">{{ tecnica.nome }}</div>
+          <div class="progresso"><div class="porcentagem" [ngStyle]="{'width':tecnica.porcentagem+'%'}"><span class="percentual"><em class="fa-solid fa-circle-check iconeCheck"></em></span></div></div>
+        </li>
+      </ul>
+    </div>
+    <div class="softSkill">
+      <p class="fa-solid fa-user iconeSoft"></p>
+      <ul *ngFor="let soft of habilidadesSofts">
+        <li>
+          <div class="nomeTecnico">{{ soft.nome }}</div>
+          <div class="progresso"><div class="porcentagem" [ngStyle]="{'width':soft.porcentagem+'%'}"><span class="percentual"><em class="fa-solid fa-circle-check iconeCheck"></em></span></div></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

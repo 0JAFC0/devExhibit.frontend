@@ -1,0 +1,127 @@
+
+ul{
+  text-align: justify;
+}
+
+.progresso {
+	position: relative;
+	width: 90%;
+	height: 8px;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-khtml-border-radius: 2px;
+  text-align: center;
+}
+
+.porcentagem {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0%;
+	height: 8px;
+	background: #7F5AF0;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-khtml-border-radius: 2px;
+	transition: all 0.2s ease 0s;
+	-moz-transition: all 0.2s ease 0s;
+	-webkit-transition: all 0.2s ease 0s;
+	-o-transition: all 0.2s ease 0s;
+}
+
+.percentual {
+	position: absolute;
+	top: -9px;
+	right: 0;
+	height: 26px;
+	width: 26px;
+	line-height: 26px;
+	background: #7F5AF0;
+	border-radius: 26px;
+	-moz-border-radius: 26px;
+	-webkit-border-radius: 26px;
+	-khtml-border-radius: 26px;
+	box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+	-khtml-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.iconeCheck {
+	font-size: 24px;
+	color: #ffffff;
+}
+
+.divHabilidades{
+  margin-top: 43px;
+}
+
+.habilidades{
+  margin-top: 43px;
+  display: flex;
+  flex-direction: colum;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+}
+
+.tecnicaSkill{
+  width: 40%;
+  padding-bottom: 20px;
+  height: 200px;
+  background-color: #000000;
+}
+
+.iconeTecnica {
+  position: relative;
+  top: -50px;
+  width: 100px;
+  height: 100px;
+  background-color: #7F5AF0;
+  font-size:50px;
+  border-radius: 50%;
+  margin-bottom: 0;
+}
+
+.iconeTecnica::before{
+  position: relative;
+  top: 25%;
+  margin-bottom: 0;
+}
+
+.softSkill{
+  width: 40%;
+  height: 200px;
+  padding-bottom: 20px;
+  background-color: #000000;
+  margin-left: 36px;
+}
+
+.iconeSoft {
+  position: relative;
+  top: -50px;
+  width: 100px;
+  height: 100px;
+  background-color: #7F5AF0;
+  font-size:50px;
+  border-radius: 50%;
+  margin-bottom: 0;
+}
+
+.iconeSoft::before{
+  position: relative;
+  top: 25%;
+}
+
+@media screen and (max-width: 320px) {
+  .habilidades {
+    flex-direction: column;
+  }
+  .softSkill{
+    margin-top: 36px;
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,186 @@
+.started-bg {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 200px;
+	background: #7F5AF0;
+}
+
+@media (max-width: 1080px) {
+	.started-bg {
+		height: 300px;
+	}
+}
+
+.slide{
+  position: fixed;
+}
+
+.started-bg .slide{
+	width: 100%;
+	height: 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0.5;
+}
+
+.menu {
+	position: relative;
+	z-index: 101;
+}
+
+.menu .top-menu {
+	position: fixed;
+	top: 0;
+	right: -300px;
+	width: 300px;
+	height: 100%;
+	background: #7F5AF0;
+	transition: all 0.4s ease 0s;
+	-moz-transition: all 0.4s ease 0s;
+	-webkit-transition: all 0.4s ease 0s;
+	-o-transition: all 0.4s ease 0s;
+}
+
+@media (max-width: 720px) {
+	.menu .top-menu {
+		width: 200px;
+		right: -200px;
+	}
+
+}
+
+.menu .top-menu.active {
+	right: 0px;
+}
+
+.menu .top-menu.active .menu-btn span {
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+}
+
+.menu .top-menu.active .menu-btn span:before {
+	top: 0;
+	transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+}
+
+.menu .top-menu.active .menu-btn span:after {
+	opacity: 0;
+}
+
+.menu .top-menu.fixed .menu-btn:before {
+	opacity: 1;
+}
+
+.menu .top-menu ul {
+	position: relative;
+	overflow: auto;
+	height: 100%;
+	font-size: 0;
+}
+
+.menu .top-menu ul li {
+	display: block;
+	line-height: 57px;
+}
+
+.menu .top-menu ul li a {
+	position: relative;
+	overflow: hidden;
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: #fefefe;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.menu .top-menu ul li a:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+	background: rgba(0, 0, 0, 0.2);
+	z-index: -1;
+	opacity: 0;
+	transition: all 0.2s ease 0s;
+	-moz-transition: all 0.2s ease 0s;
+	-webkit-transition: all 0.2s ease 0s;
+	-o-transition: all 0.2s ease 0s;
+}
+
+.menu .top-menu ul li a .circle {
+	padding: 0 20px;
+}
+
+.menu .top-menu ul li.active a:before {
+	opacity: 1;
+}
+
+.menu .menu-btn {
+	position: absolute;
+	top: 0;
+	left: -57px;
+	display: block;
+	width: 57px;
+	height: 57px;
+}
+
+.menu .menu-btn:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	background: #7F5AF0;
+	transition: all 0.2s ease 0s;
+	-moz-transition: all 0.2s ease 0s;
+	-webkit-transition: all 0.2s ease 0s;
+	-o-transition: all 0.2s ease 0s;
+}
+
+.menu .menu-btn span {
+	margin: -1px 0 0 -7px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 14px;
+	height: 2px;
+	background: #fefefe;
+	transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+}
+
+.menu .menu-btn span:before,
+.menu .menu-btn span:after {
+	content: '';
+	position: absolute;
+	top: -5px;
+	left: 0;
+	width: 14px;
+	height: 2px;
+	background: #fefefe;
+	transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+}
+
+.menu .menu-btn span:after {
+	top: auto;
+	bottom: -5px;
+}
