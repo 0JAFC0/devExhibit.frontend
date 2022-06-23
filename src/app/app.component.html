@@ -1,6 +1,12 @@
-<app-started-bg></app-started-bg>
-<div class="container">
-  <app-header></app-header>
-  <app-sobre></app-sobre>
-  <app-habilidades></app-habilidades>
+
+<div *ngIf="isMaintenance; else templateManutencao">
+  <app-started-bg></app-started-bg>
+  <div class="container">
+    <app-header></app-header>
+    <app-sobre></app-sobre>
+    <app-habilidades></app-habilidades>
+  </div>
 </div>
+<ng-template #templateManutencao>
+  <app-manutencao></app-manutencao>
+</ng-template>

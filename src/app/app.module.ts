@@ -10,6 +10,7 @@ import { HabilidadesComponent } from './components/habilidades/habilidades.compo
 import { HeaderComponent } from './components/header/header.component';
 import { SobreComponent } from './components/sobre/sobre.component';
 import { StartedBgComponent } from './components/started-bg/started-bg.component';
+import { ManutencaoComponent } from './components/manutencao/manutencao.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { StartedBgComponent } from './components/started-bg/started-bg.component
     HeaderComponent,
     SobreComponent,
     HabilidadesComponent,
+    ManutencaoComponent,
   ],
   imports: [
     BrowserModule,
