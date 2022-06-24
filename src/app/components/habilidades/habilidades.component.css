@@ -72,7 +72,15 @@ ul{
   width: 40%;
   padding-bottom: 20px;
   height: 200px;
-  background-color: #000000;
+  border: #010101 solid 1px;
+}
+
+.softSkill{
+  width: 40%;
+  height: 200px;
+  padding-bottom: 20px;
+  border: #010101 solid 1px;
+  margin-left: 3%;
 }
 
 .iconeTecnica {
@@ -92,14 +100,6 @@ ul{
   margin-bottom: 0;
 }
 
-.softSkill{
-  width: 40%;
-  height: 200px;
-  padding-bottom: 20px;
-  background-color: #000000;
-  margin-left: 36px;
-}
-
 .iconeSoft {
   position: relative;
   top: -50px;
@@ -116,12 +116,23 @@ ul{
   top: 25%;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
   .habilidades {
     flex-direction: column;
   }
+  .tecnicaSkill{
+    width: 83%;
+    height: auto;
+    border: #010101 solid 1px;
+    padding-bottom: 20px;
+    margin-top: 40px;
+  }
   .softSkill{
-    margin-top: 36px;
+    width: 83%;
+    height: auto;
+    padding-bottom: 20px;
+    border: #010101 solid 1px;
+    margin-top: 86px;
     margin-left: 0;
   }
 }

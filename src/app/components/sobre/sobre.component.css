@@ -1,6 +1,9 @@
 
 ul{
-  margin-top: 0;
+  margin: 0;
+  padding-left: 40px;
+  padding-top: 40px;
+  padding-bottom: 25px;
 }
 
 li{
@@ -12,16 +15,34 @@ li{
   padding-bottom: 12px;
 }
 
-li{
+.divSobre{
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  width: auto;
+  align-items: center;
+  justify-content: center;
 }
 
-.section{
-  display: grid;
-  grid-template-columns: repeat(2, 40% [col-start]);
-  justify-content: center;
+.principal{
+  position: relative;
+  width: 83%;
+  border: #010101 solid 1px;
+}
+
+.info-list{
+  position: relative;
+  width: 40%;
+  text-align: start;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.mensagem{
+  position: relative;
+  padding-left: 40px;
+  padding-top: 50px;
+  padding-bottom: 25px;
+  width: 53%;
   text-align: justify;
 }
 
@@ -43,22 +64,22 @@ li{
   background-color: #7F5AF0;
 }
 
-.ondeMora{padding-top: 2px;
+.ondeMora{
+  padding-top: 2px;
   padding-bottom: 2px;
   padding-left: 5px;
   padding-right: 5px;
   margin-right: 5px;
-  background-color: #7F5AF0;}
+  background-color: #7F5AF0;
+}
 
-.email{padding-top: 2px;
+.email{
+  padding-top: 2px;
   padding-bottom: 2px;
   padding-left: 5px;
   padding-right: 5px;
   margin-right: 5px;
-  background-color: #7F5AF0;}
-
-.mensagem{
-  margin-left: 20px;
+  background-color: #7F5AF0;
 }
 
 .botoes{
@@ -91,20 +112,92 @@ li{
   40%{transform: rotate(-2deg);}
 }
 
-@media screen and (max-width: 320px) {
-  .section{
-    display: grid;
-    grid-template-columns: repeat(1, 50% [col-start]);
+@media (max-width: 480px) {
+  .divSobre{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    align-items: center;
     justify-content: center;
+  }
+
+  .principal{
+    display: flex;
+    flex-flow: row wrap;
+    width: 83%;
+    border: #010101 solid 1px;
+  }
+
+  .info-list{
+    width: 80%;
+  }
+
+  .mensagem{
+    position: relative;
+    padding-left: 40px;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    width: 80%;
     text-align: justify;
   }
 }
 
-@media screen and (min-width: 2560px) {
-  .section{
-    display: grid;
-    grid-template-columns: repeat(2, 40% [col-start]);
+@media (min-width: 768px) and (max-width: 1024px) {
+  .divSobre{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    align-items: center;
     justify-content: center;
+  }
+
+  .principal{
+    display: flex;
+    flex-flow: row wrap;
+    width: 83%;
+    border: #010101 solid 1px;
+  }
+
+  .info-list{
+    width: 90%;
+  }
+
+  .mensagem{
+    position: relative;
+    padding-left: 40px;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    width: 90%;
+    text-align: justify;
+  }
+}
+
+@media (min-width: 1200px) {
+  .divSobre{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .principal{
+    display: flex;
+    flex-flow: row wrap;
+    width: 83%;
+    border: #010101 solid 1px;
+  }
+
+  .info-list{
+    width: 40%;
+  }
+
+  .mensagem{
+    position: relative;
+    padding-left: 40px;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    width: 55%;
     text-align: justify;
   }
 }
