@@ -1,0 +1,22 @@
+
+<div class="section historico-educacional" id="secao-historico-educacional" *ngIf="historicos.length>0">
+  <div class="title">Historico Educacional</div>
+  <span class="circle"><em class="icon fa-solid fa-graduation-cap"></em></span>
+  <div class="cd-timeline">
+    <div class="cd-timeline-block" *ngFor="let historico of historicos">
+      <div class="cd-timeline-point">
+        <em class="icon fa-solid fa-circle-check"></em>
+      </div>
+      <div class="cd-timeline-content">
+        <div class="content-box">
+          <div class="date">{{ historico.duracao }}</div>
+          <div class="content">
+            <div class="name">{{ historico.nomeInstituicao }}</div>
+            <div class="category">{{ historico.cargo }}</div>
+            <p>{{ historico.descricao }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

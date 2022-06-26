@@ -12,6 +12,7 @@ import { SobreComponent } from './components/sobre/sobre.component';
 import { StartedBgComponent } from './components/started-bg/started-bg.component';
 import { ManutencaoComponent } from './components/manutencao/manutencao.component';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
+import { HistoricoEducacionalComponent } from './components/historico-educacional/historico-educacional.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { ExperienciaComponent } from './components/experiencia/experiencia.compo
     HabilidadesComponent,
     ManutencaoComponent,
     ExperienciaComponent,
+    HistoricoEducacionalComponent,
   ],
   imports: [
     BrowserModule,
