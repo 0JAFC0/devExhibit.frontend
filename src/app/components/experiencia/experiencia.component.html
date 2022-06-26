@@ -1,0 +1,22 @@
+
+<div class="section experience" id="secao-experiencia" *ngIf="experiencias.length>0">
+  <div class="title">Experiencia</div>
+  <span class="circle"><em class="icon fa-solid fa-suitcase"></em></span>
+  <div class="cd-timeline">
+    <div class="cd-timeline-block" *ngFor="let experiencia of experiencias">
+      <div class="cd-timeline-point">
+        <em class="icon fa-solid fa-circle-check"></em>
+      </div>
+      <div class="cd-timeline-content">
+        <div class="content-box">
+          <div class="date">{{ experiencia.duracao }}</div>
+          <div class="content">
+            <div class="name">{{ experiencia.nomeEmpresa }}</div>
+            <div class="category">{{ experiencia.cargo }}</div>
+            <p>{{ experiencia.descricao }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

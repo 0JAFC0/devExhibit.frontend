@@ -2,9 +2,10 @@
 <div *ngIf="isMaintenance; else templateManutencao">
   <app-started-bg></app-started-bg>
   <div class="container">
-    <app-header></app-header>
-    <app-sobre></app-sobre>
-    <app-habilidades></app-habilidades>
+    <app-header id="header-section"></app-header>
+    <app-sobre id="sobre-section"></app-sobre>
+    <app-habilidades id="habilidades-section"></app-habilidades>
+    <app-experiencia id="experiencia-section"></app-experiencia>
   </div>
 </div>
 <ng-template #templateManutencao>

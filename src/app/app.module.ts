@@ -11,6 +11,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { SobreComponent } from './components/sobre/sobre.component';
 import { StartedBgComponent } from './components/started-bg/started-bg.component';
 import { ManutencaoComponent } from './components/manutencao/manutencao.component';
+import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { ManutencaoComponent } from './components/manutencao/manutencao.componen
     SobreComponent,
     HabilidadesComponent,
     ManutencaoComponent,
+    ExperienciaComponent,
   ],
   imports: [
     BrowserModule,
