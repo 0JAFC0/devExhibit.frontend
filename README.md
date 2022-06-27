@@ -15,11 +15,11 @@
 <section align="center">
   <h3 >O que ainda falta fazer?</h3>
   <li >[x] Prototipagem da interface</li>
-  <li >[ ] Criar primeiros arquivos e organizar pastas</li>
-  <li >[ ] Criar Sobre mim</li>
-  <li >[ ] Criar Parte das habilidades</li>
-  <li >[ ] Criar Parte das Experiencias</li>
-  <li >[ ] Criar Parte do Historico Educacional</li>
+  <li >[x] Criar primeiros arquivos e organizar pastas</li>
+  <li >[x] Criar Sobre mim</li>
+  <li >[x] Criar Parte das habilidades</li>
+  <li >[x] Criar Parte das Experiencias</li>
+  <li >[x] Criar Parte do Historico Educacional</li>
   <li >[ ] Criar Parte do Portifolio</li>
   <li >[ ] Criar Parte do Blog</li>
   <li >[ ] Criar Parte do Contate me</li>

@@ -1,0 +1,24 @@
+<div class="section portifolio" id="secao-portifolio">
+  <div class="title">Portifolio</div>
+  <div class="filters" ng-app="myApp" ng-controller="orderCtrl">
+    <div class="buttons active">
+      <input class="button" type="button" value="Todos" ng-click="">
+    </div>
+    <div class="buttons">
+      <input class="button" type="button" value="Backend" ng-click="">
+    </div>
+    <div class="buttons">
+      <input class="button" type="button" value="Frontend" ng-click="">
+    </div>
+  </div>
+  <div class="content-box" id="content-box" *ngFor="let projeto of projetos">
+    <div class="portifolio-content">
+      <div class="image"><img src="{{ projeto.image }}" alt=""></div>
+      <div class="box">
+        <div class="category">{{ projeto.category }}</div>
+        <p class="name"><a href="{{ projeto.urlGithub }}" target="_blank" rel="noopener noreferrer">{{ projeto.name }}</a></p>
+        <p>{{ projeto.descricao }}</p>
+      </div>
+    </div>
+  </div>
+</div>
